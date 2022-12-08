@@ -13,11 +13,11 @@ namespace Parsing
             {
                 string jsonFile = reader.ReadToEnd();
 
-                JsonDocument jDoc = JsonSerializer.Deserialize<JsonDocument>(jsonFile);
-                var labels = jDoc.RootElement.GetProperty("labels");
-                var en = labels.GetProperty("en");
-                var value = en.GetProperty("value");
-                Console.WriteLine(value);
+                //JsonDocument jDoc = JsonSerializer.Deserialize<JsonDocument>(jsonFile);
+                //var labels = jDoc.RootElement.GetProperty("labels");
+                //var en = labels.GetProperty("en");
+                // value = en.GetProperty("value");
+                Console.WriteLine(jsonFile);
             }
         }
     }
